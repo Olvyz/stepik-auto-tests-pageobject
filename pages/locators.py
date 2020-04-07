@@ -13,3 +13,12 @@ class ProductPageLocators():
     BOOK_NAME = (By.XPATH, "//*[@class ='col-sm-6 product_main']/h1")
     BOOK_NAME_ALERT = (By.XPATH, "//*[@id='messages']/div[1]/div[1]/strong")
     BOOK_PRICE_ALERT = (By.XPATH, "//*[@id='messages']/div[3]/div[1]/p/strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#messages>div>div.alertinner")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    BASKET = (By.XPATH, "//*[@class='btn-group']/*[@class='btn btn-default']")
+
+class BasketPageLocators():
+    BASKET_ITEMS = (By.CSS_SELECTOR, ".basket-items")
+    EMPTY_BASKET = (By.XPATH, "//p[contains(text(), 'Your basket is empty')]")
