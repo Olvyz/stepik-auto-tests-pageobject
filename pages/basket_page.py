@@ -7,3 +7,4 @@ class BasketPage(BasePage):
 
     def should_be_empty_basket_massege(self):
         assert self.is_element_present(*BasketPageLocators.EMPTY_BASKET), "Basket is not empty"
+ 
