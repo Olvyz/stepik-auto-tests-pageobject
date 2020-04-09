@@ -1,5 +1,4 @@
 import pytest
-import faker
 from pages.login_page import LoginPage
 from pages.main_page import MainPage
 from pages.basket_page import BasketPage
